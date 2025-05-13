@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Health & Diet Manager</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="diet.html">Diet Plan</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="tracker">
+    <h2>Track Your Daily Intake</h2>
+    <form onsubmit="addEntry(event)">
+      <input type="text" id="food" placeholder="Food Item" required />
+      <input type="number" id="calories" placeholder="Calories" required />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="entryList"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Health & Diet Manager</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

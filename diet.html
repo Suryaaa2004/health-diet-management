@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet Plan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Health & Diet Manager</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="diet.html">Diet Plan</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="diet">
+    <h2>Choose Your Goal</h2>
+    <select id="goalSelect" onchange="updateDietPlan()">
+      <option value="weightLoss">Weight Loss</option>
+      <option value="muscleGain">Muscle Gain</option>
+      <option value="maintenance">Maintenance</option>
+    </select>
+    <div id="dietPlan"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Health & Diet Manager</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
